@@ -1,0 +1,452 @@
+.perfil-container {
+  font-family: 'Inter';
+  padding: 1rem;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-left: 4.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.perfil-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.salvar-button {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.salvar-button:hover {
+  background-color: #6c3483;
+}
+
+.perfil-content {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  flex-grow: 1;
+}
+
+.resumo-container {
+  flex: 2;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;;
+  transform: translateY(-2rem);
+}
+
+.resumo-container h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.habilidades-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #8e44ad;
+  padding-bottom: 0.5rem;
+}
+
+.habilidades-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.habilidade {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.habilidade:hover {
+  background-color: #e1ccec;
+  transform: translateY(-0.25rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.habilidade-active {
+  background-color: #e1ccec;
+  border-color: #8e44ad;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resumo-profissional {
+  transform: translateY(-2.5rem);
+}
+
+.resumo-profissional h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #8e44ad;
+  padding-bottom: 0.5rem;
+}
+
+.editor-textarea {
+  width: 90%;
+  height: 8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.editor-textarea:focus {
+  border-color: #8e44ad;
+  box-shadow: 0 0 5px rgba(142, 68, 173, 0.5);
+  outline: none;
+}
+
+.perfil-visualizacao {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translateY(-2rem);
+}
+
+.perfil-visualizacao h3 {
+  font-size: 1.25rem;
+  color: #333;
+  text-align: center;
+}
+
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.perfil-nome {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.perfil-foto {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.escolher-img {
+  display: none;
+}
+
+.upload-button {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #6c3483;
+}
+
+.horarios-disponiveis h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.dias-semana {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.dia {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dia:hover {
+  background-color: #e1ccec;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dia-active {
+  background-color: #8e44ad;
+  color: white;
+  border-color: #8e44ad;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.preferencias h3 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.preferencias-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.tags-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 70%;
+  font-size: 0.875rem;
+}
+
+.tags a {
+  color: #8e44ad;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.tags a:hover {
+  color: #6c3483;
+}
+
+@media screen and (max-width: 1024px) {
+  .perfil-container {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .perfil-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .perfil-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .resumo-container,
+  .perfil-visualizacao {
+    width: 100%;
+    transform: none;
+    padding: 1rem;
+    box-shadow: none; 
+  }
+
+  .resumo-container h2,
+  .perfil-visualizacao h3 {
+    font-size: 1.5rem;
+  }
+
+  .editor-textarea {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .perfil-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .perfil-visualizacao {
+    order: -1;
+  }
+
+  .resumo-container {
+    order: 0;
+  }
+
+  .perfil-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .salvar-button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .resumo-container,
+  .perfil-visualizacao {
+    width: 100%;
+    padding: 0.75rem;
+    box-shadow: none;
+  }
+
+  .resumo-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .habilidades-section h3 {
+    font-size: 1.25rem;
+  }
+
+  .habilidade {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .perfil-foto {
+    width: 80px;
+    height: 80px;
+  }
+
+  .upload-button {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .horarios-disponiveis h3 {
+    font-size: 1.25rem;
+  }
+
+  .dia {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .perfil-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2rem;
+  }
+
+  .perfil-visualizacao {
+    display: flex;
+    width: 90%;
+    order: -1;
+  }
+
+  .resumo-container {
+    display: flex;
+    width: 90%; 
+    order: 0;
+    padding: 0.5rem;
+    box-shadow: none;
+  }
+
+  .perfil-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin-left: 2rem;
+  }
+
+  .perfil-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .salvar-button {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .editor-textarea {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .resumo-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .habilidades-section h3 {
+    font-size: 1rem;
+  }
+
+  .habilidade {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .perfil-visualizacao {
+    padding: 0.5rem;
+  }
+
+  .perfil-visualizacao h3 {
+    font-size: 0.875rem;
+  }
+
+  .perfil-nome {
+    font-size: 1rem;
+  }
+
+  .perfil-foto {
+    width: 60px;
+    height: 60px;
+  }
+
+  .upload-button {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .horarios-disponiveis h3 {
+    font-size: 1rem;
+  }
+
+  .dia {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}

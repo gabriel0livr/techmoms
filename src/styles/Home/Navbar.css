@@ -1,0 +1,108 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  font-family: 'Inter';
+  position: sticky;
+  box-shadow: 3px 0 5px rgba(0,0,0,0.1);
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 35px;
+  color: #000;
+  text-align: center;
+  font-family: 'Pacifico';
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: 'Inter';
+}
+
+.navbar-menu li {
+  margin: 0 1rem;
+  font-weight: bold;
+  font-family: 'Inter';
+}
+
+.navbar-cadastrar {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+  font-family: 'Inter';
+}
+
+.navbar-menu a:hover {
+  color: #6c63ff;
+}
+
+.navbar-login {
+  background: linear-gradient(to right, #FF6161, #57007B);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Inter';
+}
+
+.navbar-cadastro {
+  background: linear-gradient(to right, #626dd1, #57007B);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Inter';
+}
+
+.navbar-login:hover {
+  background-color: #ee0979;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-logo {
+    height: 30px;
+    font-size: 20px;
+  }
+}

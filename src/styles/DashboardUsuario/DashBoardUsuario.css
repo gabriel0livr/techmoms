@@ -1,0 +1,7 @@
+.dashboard-usuario {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(245, 246, 250, 1);
+}

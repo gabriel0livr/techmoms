@@ -1,0 +1,63 @@
+.footer-dashboard-empresa {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    color: white;
+    overflow-x: hidden;
+    align-self: flex-end;
+  }
+  
+  .footer-dashboard-empresa-left a {
+    padding-left: 6rem;
+    margin-right: -5rem;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-dashboard-empresa-right a {
+    margin-left: 2rem;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-dashboard-empresa-left a:hover,
+  .footer-dashboard-empresa-right a:hover {
+    color: #61dafb;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-dashboard-empresa {
+        flex-direction: column; 
+        padding: 15px;
+        text-align: center; 
+    }
+  
+    .footer-dashboard-empresa-left,
+    .footer-dashboard-empresa-right {
+        margin-bottom: 10px; 
+    }
+  
+    .footer-dashboard-empresa-left a {
+        padding-left: 2rem; 
+        margin-right: 0;
+    }
+  
+    .footer-dashboard-empresa-right a {
+        margin-left: 0; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-dashboard-empresa {
+        padding: 10px;
+    }
+  
+    .footer-dashboard-empresa-left a,
+    .footer-dashboard-empresa-right a {
+        font-size: 14px; 
+        padding-left: 1rem;
+    }
+  }
+  

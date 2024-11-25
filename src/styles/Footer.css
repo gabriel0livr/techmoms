@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    color: white;
+    overflow-x: hidden;
+    align-self: flex-end;
+  }
+  
+  .footer-left a {
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-right a {
+    margin-left: 15px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-left a:hover,
+  .footer-right a:hover {
+    color: #61dafb;
+  }
+  

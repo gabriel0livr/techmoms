@@ -1,0 +1,188 @@
+.sidebar-business {
+  height: 98%;
+  width: 3.7rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 35px;
+  border-top: none;
+  border-right: 1px solid #e0e0e0;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.hidden-business {
+  display: none;
+}
+
+.sidebar-business-text {
+  display: inline-block;
+  margin-left: 5px;
+  transition: opacity 0.3s;
+}
+
+.sidebar-business.expanded .sidebar-business-text {
+  opacity: 1;
+  margin-left: 10px;
+}
+
+.sidebar-business ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.sidebar-business li {
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 2px 0;
+}
+
+.sidebar-business a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #b8b8b8;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s, padding-left 0.3s, background-color 0.3s;
+  border-radius: 4px;
+}
+
+.sidebar-business a:hover {
+  color: #626dd1;
+  background-color: transparent; 
+}
+
+.sidebar-business a:hover .react-icon-business {
+  color: #626dd1; 
+}
+
+.sidebar-business li.active a {
+  color: #ffffff; 
+  background-image: linear-gradient(to right, rgb(98, 109, 209), rgb(87, 0, 123));
+  padding-left: 20px;
+}
+
+.sidebar-business li.active .react-icon-business {
+  color: #ffffff; 
+}
+
+.react-icon-business {
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  color: #b8b8b8;
+  transition: color 0.3s;
+}
+
+.sidebar-business.expanded {
+  width: 175px;
+  z-index: 500;
+}
+
+.sidebar-business.expanded a span:last-child {
+  display: inline;
+}
+
+.sidebar-business a span:last-child {
+  display: none;
+}
+
+.bottom-links-business {
+  width: 100%;
+  padding-bottom: 20px;
+  margin-top: auto;
+}
+
+.toggle-button-business {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: #b8b8b8;
+  transition: color 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar-business {
+    width: 50px;
+  }
+
+  .sidebar-business.expanded {
+    width: 150px;
+  }
+
+  .sidebar-business a {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .sidebar-business .react-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .toggle-button-business {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-business {
+    width: 40px;
+  }
+
+  .sidebar-business.expanded {
+    width: 125px;
+  }
+
+  .sidebar-business a {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+
+  .sidebar-business .react-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .toggle-button-business {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar-business {
+    width: 45px;
+  }
+
+  .sidebar-business.expanded {
+    width: 100px;
+  }
+
+  .sidebar-business a {
+    font-size: 8px;
+    padding: 4px 6px;
+  }
+
+  .sidebar-business .react-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .toggle-button-business {
+    font-size: 16px;
+  }
+}

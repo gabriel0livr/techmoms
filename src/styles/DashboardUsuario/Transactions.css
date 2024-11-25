@@ -1,0 +1,146 @@
+.transactions-container {
+    margin: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 1rem;
+    padding-left: 2rem;
+    margin-left: 100px;
+    transform: translateX(-10px);
+  }
+  
+  .transactions-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .transactions-header p {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .transactions-table-header,
+  .transactions-table-row {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    align-items: center;
+    padding: 0.75rem 0;
+  }
+  
+  .transactions-table-header {
+    border-bottom: 1px solid #dee2e6;
+    color: #495057;
+    font-weight: bold;
+  }
+  
+  .transactions-table-row {
+    border-bottom: 1px solid #f1f3f5;
+  }
+  
+  .transactions-table-row:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .transactions-table-row div {
+    padding: 0.5rem 0;
+  }
+  
+  .transactions-status {
+    display: inline-block;
+    padding: 0.313rem 0.625rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  .transactions-status.concluido {
+    background-color: #28a745;
+  }
+  
+  .transactions-status.cancelado {
+    background-color: #dc3545;
+  }
+  
+  .transactions-status.andamento {
+    background-color: #007bff;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 1024px) {
+    .transactions-container {
+      margin-left: 50px;
+      transform: translateX(0);
+      padding-left: 1rem;
+    }
+  
+    .transactions-table-header,
+    .transactions-table-row {
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    }
+  
+    .transactions-header h2 {
+      font-size: 1.25rem;
+    }
+  
+    .transactions-header p {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .transactions-container {
+      margin-left: 20px;
+      padding-left: 1rem;
+    }
+  
+    .transactions-table-header,
+    .transactions-table-row {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .transactions-header h2 {
+      font-size: 1rem;
+    }
+  
+    .transactions-header p {
+      font-size: 0.75rem;
+    }
+  
+    .transactions-status {
+      font-size: 0.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .transactions-container {
+      margin-left: 5rem;
+      padding-left: 0.5rem;
+    }
+  
+    .transactions-table-header,
+    .transactions-table-row {
+      grid-template-columns: 1fr 1fr;
+      padding: 0.5rem 0;
+    }
+  
+    .transactions-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .transactions-header p {
+      font-size: 0.8rem;
+    }
+  
+    .transactions-status {
+      font-size: 0.625rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }

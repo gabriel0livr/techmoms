@@ -1,0 +1,321 @@
+.joblist-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f5f6fa;
+  width: 100%;
+}
+
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 90%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333333;
+  margin: 0;
+}
+
+.job-menu {
+  font-size: 1.5rem;
+  color: #999999;
+  cursor: pointer;
+}
+
+.job-type-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.job-type {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  color: #0ba02c;
+}
+
+.job-type.freelancer {
+  background-color: #e7f6ea;
+}
+
+.job-type.tempo-integral {
+  background-color: #e7f6ea;
+}
+
+.job-salary {
+  font-size: 0.875rem;
+  color: #555555;
+}
+
+.job-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.job-tag {
+  font-size: 0.75rem;
+  background-color: #e8eafe;
+  color: #313d4f;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.job-company-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.job-icon {
+  font-size: 1.5rem;
+  color: #4285f4;
+}
+
+.job-company {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.job-location {
+  font-size: 0.8rem;
+  color: #777777;
+  display: flex;
+  align-items: center;
+}
+
+.job-location i {
+  margin-right: 0.25rem;
+}
+
+.job-rating {
+  font-size: 0.875rem;
+  color: #f39c12;
+  text-align: right;
+}
+
+.job-rating i {
+  margin-right: 0.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .joblist-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .job-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .job-title {
+    font-size: 1.1rem;
+  }
+
+  .job-menu {
+    font-size: 1.3rem;
+  }
+
+  .job-type {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .job-salary {
+    font-size: 0.8rem;
+  }
+
+  .job-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .job-company {
+    font-size: 0.85rem;
+  }
+
+  .job-location {
+    font-size: 0.75rem;
+  }
+
+  .job-rating {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .joblist-container {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .job-card {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .job-title {
+    font-size: 1rem;
+  }
+
+  .job-menu {
+    font-size: 1.2rem;
+  }
+
+  .job-type {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .job-salary {
+    font-size: 0.75rem;
+  }
+
+  .job-tag {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.3rem;
+  }
+
+  .job-company {
+    font-size: 0.8rem;
+  }
+
+  .job-location {
+    font-size: 0.7rem;
+  }
+
+  .job-rating {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .joblist-container {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    transform: translateX(2rem);
+  }
+
+  .job-card {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .job-title {
+    font-size: 0.9rem;
+  }
+
+  .job-menu {
+    font-size: 1rem;
+  }
+
+  .job-type {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .job-salary {
+    font-size: 0.7rem;
+  }
+
+  .job-tag {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.3rem;
+  }
+
+  .job-company {
+    font-size: 0.75rem;
+  }
+
+  .job-location {
+    font-size: 0.65rem;
+  }
+
+  .job-rating {
+    font-size: 0.7rem;
+  }
+
+  .pagination {
+    transform: translateX(2rem);
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  transform: translateX(2rem);
+}
+
+.pagination button {
+  background-color: #ddd;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #5848c2;
+}
+
+.pagination .arrow {
+  font-size: 1.2rem;
+  color: #5848c2;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.pagination .arrow.disabled {
+  color: #ddd;
+}
+
+.top-rated-companies-pagination-button,
+.top-rated-companies-pagination-number {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 0.2rem;
+}
+
+.top-rated-companies-pagination-button:hover,
+.top-rated-companies-pagination-number:hover {
+  background-color: #5848c2;
+}
+
+.top-rated-companies-pagination-number {
+  background-color: transparent;
+  color: #333;
+}
+
+.top-rated-companies-pagination-number.active {
+  background-color: #5848c2;
+  color: #fff;
+}

@@ -1,0 +1,229 @@
+.projects-container {
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transform: translateX(20px);
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px; 
+  margin-bottom: 20px;
+}
+
+.projects-header h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.projects-view-all {
+  font-size: 0.875rem;
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.projects-month-selector {
+  margin-left: auto;
+}
+
+.projects-month-selector select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.projects-table-headers {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 25px;
+  background-color: #eff2f8;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.projects-table-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-table-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 30px 0; 
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.projects-cell {
+  display: flex;
+  align-items: center;
+}
+
+.projects-account-info {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.projects-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000000; 
+  position: relative;
+  margin-right: 10px;
+}
+
+.projects-avatar::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #28a745;
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  border: 3px solid #ffffff;
+}
+
+.projects-status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.projects-status.concluido {
+  background-color: #28a745;
+}
+
+.projects-status.cancelado {
+  background-color: #dc3545;
+}
+
+.projects-status.andamento {
+  background-color: #007bff;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  .projects-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .projects-table-headers, .projects-table-row {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  }
+
+  .projects-avatar {
+    width: 35px;
+    height: 35px;
+  }
+
+  .projects-avatar::after {
+    width: 10px;
+    height: 10px;
+  }
+
+  .projects-status {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    width: 95%;
+    padding: 15px;
+    transform: translateX(2rem);
+  }
+
+  .projects-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .projects-table-headers, .projects-table-row {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  }
+
+  .projects-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .projects-avatar::after {
+    width: 8px;
+    height: 8px;
+  }
+
+  .projects-status {
+    font-size: 0.75rem;
+  }
+
+  /* Nome da freelancer abaixo da foto */
+  .projects-account-info {
+    flex-direction: column;
+    align-items: center; /* Centraliza foto e nome */
+    text-align: center;
+  }
+
+  .projects-avatar {
+    margin-bottom: 5px; /* Espaço entre foto e nome */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-container {
+    width: 75%;
+    padding: 10px;
+  }
+
+  .projects-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projects-header h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .projects-table-headers, .projects-table-row {
+    grid-template-columns: 2fr 2fr 1fr;
+    padding: 0.5rem 0;
+  }
+
+  .projects-avatar {
+    width: 25px;
+    height: 25px;
+  }
+
+  .projects-avatar::after {
+    width: 6px;
+    height: 6px;
+  }
+
+  .projects-status {
+    font-size: 0.75rem;
+  }
+
+  /* Nome da freelancer abaixo da foto */
+  .projects-account-info {
+    flex-direction: column;
+    align-items: center; /* Centraliza foto e nome */
+    text-align: center;
+  }
+
+  .projects-avatar {
+    margin-bottom: 5px; /* Espaço entre foto e nome */
+  }
+}

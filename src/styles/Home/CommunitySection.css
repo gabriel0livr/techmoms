@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.community-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.community-section h2 {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 51px;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 53px;
+}
+
+.arrow-left, .arrow-right {
+  background: none;
+  border: 3px solid #57007B;
+  font-size: 2rem;
+  font-weight: 100;
+  cursor: pointer;
+  color: #57007B;
+  width: 50px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #57007B;
+  margin: 0 180px;
+}
+
+.testimonial-content {
+  max-width: 600px;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.feedback {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.9;
+}
+
+.user-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.thumbnail {
+  text-align: center;
+  margin: 0 15px;
+  opacity: 0.5;
+}
+
+.thumbnail.active {
+  opacity: 1;
+}
+
+.user-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #E7DAED;
+  margin: 0 auto 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.user-circle.active {
+  box-shadow: 0px 0px 15px 4px rgba(126, 126, 126, 0.2);
+  width: 100px;
+  height: 100px;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.5rem;
+}
+
+.thumbnail .name {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000; 
+  margin-bottom: 5px;
+}
+
+.thumbnail.active .name {
+  font-weight: bold;
+  font-size: 1.1rem;       
+  color: #57007B;          
+}
+
+.thumbnail .role {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0;          
+}
+
+.thumbnail.active .role {
+  margin-top: -1px;
+  color: #000000;        
+}
+
+.community-section h2::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #F76680, #57007B);
+  margin: 0 auto 10px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .arrow-left, .arrow-right {
+    margin: 0 100px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .testimonial-content {
+    max-width: 500px;
+    padding: 15px;
+  }
+
+  .feedback {
+    font-size: 1rem;
+  }
+
+  .user-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .thumbnail {
+    display: none;
+  }
+
+  .thumbnail.active {
+    display: block;
+  }
+
+  .user-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .user-circle.active {
+    width: 90px;
+    height: 90px;
+  }
+
+  .thumbnail .name {
+    font-size: 0.9rem;
+  }
+
+  .thumbnail.active .name {
+    font-size: 1rem;
+  }
+
+  .thumbnail .role {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .arrow-left, .arrow-right {
+    margin: 0 50px;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .testimonial-content {
+    max-width: 400px;
+    padding: 10px;
+  }
+
+  .feedback {
+    font-size: 0.9rem;
+  }
+
+  .user-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .thumbnail {
+    display: none;
+  }
+
+  .thumbnail.active {
+    display: block;
+  }
+
+  .user-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user-circle.active {
+    width: 80px;
+    height: 80px;
+  }
+
+  .thumbnail .name {
+    font-size: 0.8rem;
+  }
+
+  .thumbnail.active .name {
+    font-size: 0.9rem;
+  }
+
+  .thumbnail .role {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .arrow-left, .arrow-right {
+    margin: 0 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .testimonial-content {
+    max-width: 300px;
+    padding: 5px;
+  }
+
+  .feedback {
+    font-size: 0.8rem;
+  }
+
+  .user-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .thumbnail {
+    display: none;
+  }
+
+  .thumbnail.active {
+    display: block;
+  }
+
+  .user-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-circle.active {
+    width: 70px;
+    height: 70px;
+  }
+
+  .thumbnail .name {
+    font-size: 0.7rem;
+  }
+
+  .thumbnail.active .name {
+    font-size: 0.8rem;
+  }
+
+  .thumbnail .role {
+    font-size: 0.6rem;
+  }
+}

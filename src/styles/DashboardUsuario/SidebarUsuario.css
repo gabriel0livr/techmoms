@@ -1,0 +1,187 @@
+.sidebar {
+    height: 98%;
+    width: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 35px;
+    border-top: none;
+    border-right: 1px solid #e0e0e0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 500;
+}
+
+.hidden {
+    display: none;
+}
+
+.sidebar-text {
+    display: inline-block;
+    margin-left: 5px;
+    transition: opacity 0.3s;
+}
+
+.sidebar.expanded .sidebar-text {
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.sidebar li {
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 2px 0;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #b8b8b8;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, padding-left 0.3s, background-color 0.3s;
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    color: #626dd1;
+    background-color: transparent; 
+}
+
+.sidebar a:hover .react-icon {
+    color: #626dd1; 
+}
+
+.sidebar li.active a {
+    color: #ffffff; 
+    background-image: linear-gradient(to right, rgb(98, 109, 209), rgb(87, 0, 123));
+    padding-left: 20px;
+}
+
+.sidebar li.active .react-icon {
+    color: #ffffff; 
+}
+
+.sidebar .react-icon {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    color: #b8b8b8;
+    transition: color 0.3s;
+}
+
+.sidebar.expanded {
+    width: 175px;
+}
+
+.sidebar.expanded a span:last-child {
+    display: inline;
+}
+
+.sidebar a span:last-child {
+    display: none;
+}
+
+.bottom-links {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: auto;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    color: #b8b8b8;
+    transition: color 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+      width: 50px;
+    }
+  
+    .sidebar.expanded {
+      width: 150px;
+    }
+  
+    .sidebar a {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  
+    .sidebar .react-icon {
+      width: 28px;
+      height: 18px;
+    }
+  
+    .toggle-button {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 40px;
+    }
+  
+    .sidebar.expanded {
+      width: 125px;
+    }
+  
+    .sidebar a {
+      font-size: 10px;
+      padding: 6px 8px;
+    }
+  
+    .sidebar .react-icon {
+      width: 28px;
+      height: 18px;
+    }
+  
+    .toggle-button {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sidebar {
+      width: 45px;
+    }
+  
+    .sidebar.expanded {
+      width: 100px;
+    }
+  
+    .sidebar a {
+      font-size: 8px;
+      padding: 4px 6px;
+    }
+  
+    .sidebar .react-icon {
+      width: 28px;
+      height: 18px;
+    }
+  
+    .toggle-button {
+      font-size: 16px;
+    }
+  }

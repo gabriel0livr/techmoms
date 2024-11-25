@@ -1,0 +1,182 @@
+.container-freela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.freela-filho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.freela-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px;
+    width: 100%;
+    margin-left: 10dvh;
+}
+
+.freela-header h1 {
+    font-size: 2rem;
+    color: #202224;
+    font-weight: bold;
+}
+
+.freela-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    min-width: 18.375rem;
+    min-height: 12.0625rem;
+    max-width: 18.375rem;
+    max-height: 12.0625rem;
+    border-radius: 0.3125rem;
+}
+
+.freela-data-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 1rem;
+    width: 100%;
+    height: 100dvh;
+    max-height: 10.0625rem;
+}
+
+.freela-data-item p {
+    color: #202224;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.percent-display {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 1dvh;
+  }
+  
+  .icon-up, .valueUp {
+    color: #00B69B; 
+  }
+  
+  .icon-down, .valueDown {
+    color: #F93C65; 
+  }
+  
+  .value {
+    font-weight: bold;
+  }
+  
+  .text-value-usuario {
+    color: #606060;
+    margin-left: 1px;
+    font-weight: 100px;
+  }
+
+  .freela-data-img {
+    display: flex;
+    flex-direction: column;
+    height: 15dvh;
+    padding-right: 1rem;
+  }
+
+  .data-icon {
+    font-size: 40px; 
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 50%;
+    color: #57007B; 
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+@media (max-width: 1024px) {
+  .freela-filho {
+      flex-wrap: wrap; 
+      justify-content: center;
+  }
+
+  .freela-data {
+      min-width: 15rem; 
+      max-width: 15rem; 
+  }
+
+  .freela-header h1 {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .freela-filho {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  .freela-header {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+  }
+
+  .freela-header h1 {
+      font-size: 2rem;
+      text-align: center;
+  }
+
+  .freela-data {
+      min-width: 12rem;
+      max-width: 12rem;
+  }
+
+  .freela-data-item p {
+      font-size: 14px;
+  }
+
+  .data-icon {
+      font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .freela-filho {
+      flex-direction: column; 
+      align-items: center;
+      gap: 15px;
+  }
+
+  .freela-header h1 {
+      font-size: 2rem;
+  }
+
+  .freela-data {
+      width: 80%; 
+      min-width: unset;
+      max-width: unset;
+      transform: translateX(0.6rem);
+  }
+
+  .freela-data-item p {
+      font-size: 20px; 
+  }
+
+  .data-icon {
+      font-size: 28px; 
+  }
+}
